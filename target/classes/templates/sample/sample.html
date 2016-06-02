@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta th:replace="common::meta"/>
+  <link href="/css/sample/sample.css" rel="stylesheet"/>
+  <script type="text/javascript" src="/js/sample/sample.js"></script>
+</head>
+<body>
+  <div th:replace="common::header"></div>
+
+  <div class="container">
+    <div class="page-header">
+      <h1 th:text="'Hello ' + ${name}"></h1>
+    </div>
+
+    <p>
+      <input type="button" id="primary-btn" class="btn btn-primary" value="primary"/>
+      <input type="button" class="btn btn-success" value="success"/>
+      <input type="button" class="btn btn-info" value="info"/>
+      <input type="button" class="btn btn-warning" value="warning"/>
+      <input type="button" class="btn btn-danger" value="danger"/>
+    </p>
+  </div>
+
+  <div th:replace="common::footer"></div>
+</body>
+</html>
